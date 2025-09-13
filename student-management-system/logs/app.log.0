@@ -1,0 +1,525 @@
+Sep 13, 2025 5:02:12 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 5:02:12 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 5:02:14 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 5:05:50 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 5:05:50 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 5:05:51 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 5:29:49 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 5:29:49 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 5:29:51 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:603)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:598)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1710)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:819)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:462)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1628)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1375)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1322)
+	at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:1516)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1459)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:828)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.StudentDAO.addStudent(StudentDAO.java:12)
+	at com.example.studentmanagement.App.main(App.java:38)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Sep 13, 2025 5:29:52 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:603)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:598)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1710)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:819)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:462)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1628)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1375)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1322)
+	at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:1516)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1459)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:828)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.App.main(App.java:67)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Sep 13, 2025 5:29:52 PM com.example.studentmanagement.App main
+SEVERE: ❌ Database connection failed: ORA-01017: invalid username/password; logon denied
+
+Sep 13, 2025 5:38:55 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 5:38:55 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 5:38:56 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 5:39:29 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 5:40:33 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 5:40:33 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 5:40:35 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 5:43:55 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 5:43:55 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 5:43:57 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 5:46:32 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 5:46:32 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 5:46:33 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 5:50:33 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 5:50:33 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 5:50:34 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 5:56:23 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 5:56:23 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 5:56:25 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 6:22:08 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 6:22:08 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 6:22:10 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 6:26:28 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 6:26:28 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 6:26:29 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-12505: Cannot connect to database. SID XEPDB1 is not registered with the listener at host localhost port 1521. (CONNECTION_ID=42krhGKiRVeXJYxNcHB+MA==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:1099)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:879)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.StudentDAO.addStudent(StudentDAO.java:12)
+	at com.example.studentmanagement.App.main(App.java:38)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: oracle.net.ns.NetException: ORA-12505: Cannot connect to database. SID XEPDB1 is not registered with the listener at host localhost port 1521. (CONNECTION_ID=42krhGKiRVeXJYxNcHB+MA==)
+	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:916)
+	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:454)
+	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:262)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:327)
+	at oracle.jdbc.driver.T4CConnection.connectSession(T4CConnection.java:2882)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:811)
+	... 11 more
+
+Sep 13, 2025 6:26:29 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-12505: Cannot connect to database. SID XEPDB1 is not registered with the listener at host localhost port 1521. (CONNECTION_ID=3Mi1y/KERVedmsd//jdOZQ==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:1099)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:879)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.App.main(App.java:67)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: oracle.net.ns.NetException: ORA-12505: Cannot connect to database. SID XEPDB1 is not registered with the listener at host localhost port 1521. (CONNECTION_ID=3Mi1y/KERVedmsd//jdOZQ==)
+	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:916)
+	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:454)
+	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:262)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:327)
+	at oracle.jdbc.driver.T4CConnection.connectSession(T4CConnection.java:2882)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:811)
+	... 10 more
+
+Sep 13, 2025 6:26:29 PM com.example.studentmanagement.App main
+SEVERE: ❌ Database connection failed: ORA-12505: Cannot connect to database. SID XEPDB1 is not registered with the listener at host localhost port 1521. (CONNECTION_ID=3Mi1y/KERVedmsd//jdOZQ==)
+Sep 13, 2025 6:27:54 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 6:27:54 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 6:27:55 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 6:30:25 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 6:30:30 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 6:33:36 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 6:33:39 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 6:36:48 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLRecoverableException: ORA-17002: I/O error: An established connection was aborted by the software in your host machine, Authentication lapse 157313 ms.
+	at oracle.jdbc.driver.T4CConnection.handleLogonIOException(T4CConnection.java:1142)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:882)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.StudentDAO.addStudent(StudentDAO.java:12)
+	at com.example.studentmanagement.App.main(App.java:38)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine, Authentication lapse 157313 ms.
+	at oracle.jdbc.driver.T4CConnection.handleLogonIOException(T4CConnection.java:1137)
+	... 10 more
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:340)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:306)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:269)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:425)
+	at oracle.net.nt.TimeoutSocketChannel.readFromSocket(TimeoutSocketChannel.java:743)
+	at oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:496)
+	at oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:1222)
+	at oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:271)
+	at oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:204)
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:147)
+	at oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:120)
+	at oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:104)
+	at oracle.jdbc.driver.T4CMAREngineNIO.prepareForUnmarshall(T4CMAREngineNIO.java:875)
+	at oracle.jdbc.driver.T4CMAREngineNIO.unmarshalUB1(T4CMAREngineNIO.java:446)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:888)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:462)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1628)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1375)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1322)
+	at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:1516)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1459)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:828)
+	... 9 more
+
+Sep 13, 2025 6:37:55 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 6:37:59 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 6:40:52 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 6:40:55 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 6:43:10 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 6:43:10 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 6:43:11 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 6:54:28 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 6:54:32 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 6:56:05 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 6:56:05 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 6:56:08 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:603)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:598)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1710)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:819)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:462)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1628)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1375)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1322)
+	at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:1516)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1459)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:828)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.StudentDAO.addStudent(StudentDAO.java:12)
+	at com.example.studentmanagement.App.main(App.java:38)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Sep 13, 2025 6:56:09 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:603)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:598)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1710)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:819)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:462)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1628)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1375)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1322)
+	at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:1516)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1459)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:828)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.App.main(App.java:67)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Sep 13, 2025 6:56:09 PM com.example.studentmanagement.App main
+SEVERE: ❌ Database connection failed: ORA-01017: invalid username/password; logon denied
+
+Sep 13, 2025 7:00:26 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 7:00:26 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 7:00:27 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-12505: Cannot connect to database. SID XEPDB1 is not registered with the listener at host localhost port 1521. (CONNECTION_ID=2zRgZQOTSPutIrLftXBTKA==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:1099)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:879)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.StudentDAO.addStudent(StudentDAO.java:12)
+	at com.example.studentmanagement.App.main(App.java:38)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: oracle.net.ns.NetException: ORA-12505: Cannot connect to database. SID XEPDB1 is not registered with the listener at host localhost port 1521. (CONNECTION_ID=2zRgZQOTSPutIrLftXBTKA==)
+	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:916)
+	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:454)
+	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:262)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:327)
+	at oracle.jdbc.driver.T4CConnection.connectSession(T4CConnection.java:2882)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:811)
+	... 11 more
+
+Sep 13, 2025 7:00:27 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-12505: Cannot connect to database. SID XEPDB1 is not registered with the listener at host localhost port 1521. (CONNECTION_ID=KtpvdRLPSz6kwJjoNG5p4w==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:1099)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:879)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.App.main(App.java:67)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: oracle.net.ns.NetException: ORA-12505: Cannot connect to database. SID XEPDB1 is not registered with the listener at host localhost port 1521. (CONNECTION_ID=KtpvdRLPSz6kwJjoNG5p4w==)
+	at oracle.net.ns.NSProtocolNIO.createRefusePacketException(NSProtocolNIO.java:916)
+	at oracle.net.ns.NSProtocolNIO.handleConnectPacketResponse(NSProtocolNIO.java:454)
+	at oracle.net.ns.NSProtocolNIO.negotiateConnection(NSProtocolNIO.java:262)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:327)
+	at oracle.jdbc.driver.T4CConnection.connectSession(T4CConnection.java:2882)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:811)
+	... 10 more
+
+Sep 13, 2025 7:00:27 PM com.example.studentmanagement.App main
+SEVERE: ❌ Database connection failed: ORA-12505: Cannot connect to database. SID XEPDB1 is not registered with the listener at host localhost port 1521. (CONNECTION_ID=KtpvdRLPSz6kwJjoNG5p4w==)
+Sep 13, 2025 7:11:43 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 7:11:43 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 7:11:45 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:603)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:598)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1710)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:819)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:462)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1628)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1375)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1322)
+	at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:1516)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1459)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:828)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.StudentDAO.addStudent(StudentDAO.java:12)
+	at com.example.studentmanagement.App.main(App.java:38)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Sep 13, 2025 7:11:47 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:603)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:598)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1710)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:819)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:462)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1628)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1375)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1322)
+	at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:1516)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1459)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:828)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.App.main(App.java:67)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Sep 13, 2025 7:11:47 PM com.example.studentmanagement.App main
+SEVERE: ❌ Database connection failed: ORA-01017: invalid username/password; logon denied
+
+Sep 13, 2025 7:16:10 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 7:16:10 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 7:16:12 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:603)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:598)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1710)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:819)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:462)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1628)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1375)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1322)
+	at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:1516)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1459)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:828)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.StudentDAO.addStudent(StudentDAO.java:12)
+	at com.example.studentmanagement.App.main(App.java:38)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Sep 13, 2025 7:16:13 PM com.example.studentmanagement.DBUtil getConnection
+SEVERE: ❌ Failed to connect to database
+java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:603)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:598)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1710)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:819)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1041)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:443)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:462)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1628)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1375)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1322)
+	at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:1516)
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1459)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:828)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1132)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:837)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:664)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at com.example.studentmanagement.DBUtil.getConnection(DBUtil.java:54)
+	at com.example.studentmanagement.App.main(App.java:67)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Sep 13, 2025 7:16:13 PM com.example.studentmanagement.App main
+SEVERE: ❌ Database connection failed: ORA-01017: invalid username/password; logon denied
+
+Sep 13, 2025 7:17:07 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 7:17:07 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 7:17:08 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 7:20:32 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 7:20:32 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 7:20:33 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.
+Sep 13, 2025 7:22:38 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Logging initialized from logging.properties
+Sep 13, 2025 7:22:38 PM com.example.studentmanagement.DBUtil <clinit>
+INFO: ✅ Database properties loaded successfully
+Sep 13, 2025 7:22:39 PM com.example.studentmanagement.App main
+INFO: ✅ Connection successful! Now you can run SQL queries.

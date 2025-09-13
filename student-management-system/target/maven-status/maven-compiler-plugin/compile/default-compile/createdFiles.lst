@@ -1,0 +1,4 @@
+com\example\studentmanagement\DBUtil.class
+com\example\studentmanagement\Student.class
+com\example\studentmanagement\StudentDAO.class
+com\example\studentmanagement\App.class
